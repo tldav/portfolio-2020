@@ -1,0 +1,124 @@
+/* CONTACT SECTION */
+.contact-flex-container {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+.contact-form {
+	max-width: 420px;
+}
+
+.input-style {
+	color: #effffa;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	border-radius: 5px;
+	line-height: 22px;
+	background-color: transparent;
+	border: 2px solid #effffa;
+	transition: all 0.3s;
+	padding: 13px;
+	margin-bottom: 15px;
+	width: 100%;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+.input-style:focus {
+	border: 2px solid #750ff7;
+}
+
+.contact-form textarea {
+	height: 150px;
+	line-height: 150%;
+	resize: vertical;
+}
+
+.input-style::placeholder {
+	color: #effffa;
+	opacity: 1;
+}
+
+.send-button {
+	font-family: "Montserrat", Arial, Helvetica, sans-serif;
+	width: 100%;
+	border-radius: 5px;
+	border: 0;
+	background-color: #effffa;
+	color: #750ff7;
+	font-size: 24px;
+	transition: all 0.3s;
+	margin-top: -4px;
+	font-weight: 700;
+}
+.send-button:hover {
+	background-color: #750ff7;
+	color: #effffa;
+}
+
+.contact-info-flex-container {
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	flex-flow: column wrap;
+}
+
+.contact-icons {
+	font-size: 52px;
+	transition: all 0.2s ease-in-out;
+	margin: auto;
+	color: #effffa;
+	cursor: pointer;
+}
+
+.contact-icons:hover {
+	transform: scale(1.25);
+}
+
+.success {
+	font-size: 18px;
+	font-weight: bolder;
+	text-align: center;
+}
+.error {
+	font-weight: bolder;
+	font-size: 18px;
+	text-align: center;
+	color: rgb(235, 108, 129);
+}
+
+@media (max-width: 300px) {
+	.contact-icons {
+		font-size: 38px;
+	}
+
+	.send-button {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 470px) {
+	.contact-info-flex-container {
+		justify-content: space-between;
+	}
+	.contact-icons {
+		margin: 0;
+	}
+}
+
+@media (max-width: 615px) {
+	.contact-flex-container {
+		flex-flow: column-reverse wrap;
+	}
+	.contact-form {
+		margin: auto;
+	}
+	.contact-info-flex-container {
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 35px;
+		margin-top: 13px;
+	}
+}

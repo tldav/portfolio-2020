@@ -1,0 +1,219 @@
+.github-link {
+	color: #750ff7;
+	font-weight: bolder;
+}
+.github-link:hover {
+	color: rgb(53, 53, 53);
+}
+
+.proj-container {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.proj-box {
+	width: 50%;
+}
+
+.proj-title {
+	font-size: 45px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+#yoda-title {
+	color: #ecc94b;
+	font-family: "Russo One", sans-serif;
+	font-weight: bolder;
+}
+
+#plumm-title {
+	color: rgb(255, 255, 255);
+	font-family: "Ultra", serif;
+	font-weight: 100;
+}
+
+#fit-title {
+	color: rgb(109, 199, 7);
+	font-family: "Trade Winds", cursive;
+}
+
+#charity-title {
+	color: rgb(130, 255, 255);
+	font-family: "Lobster", cursive;
+}
+
+.content {
+	position: relative;
+	width: 100%;
+	max-width: 420px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.content-text {
+	margin-bottom: 16px;
+}
+
+.content .content-overlay {
+	/* background-color: #750ff7; */
+	background-color: #effffa;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+	opacity: 1;
+}
+.content:hover .proj-title {
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.content-image {
+	width: 100%;
+}
+
+.content-details {
+	position: absolute;
+	text-align: center;
+	padding-left: 1em;
+	padding-right: 1em;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+	top: 50%;
+	left: 50%;
+	opacity: 1;
+}
+
+.content-details a {
+	/* background-color: #effffa; */
+	background-color: #750ff7;
+	/* color: #750ff7; */
+	color: #effffa;
+	font-weight: bolder;
+	letter-spacing: 0.15em;
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+	/* padding: 5px 20px; */
+	border-radius: 5px;
+	margin: 0 20px;
+	font-size: 18px;
+}
+
+/* *****FONT SIZE HERE is causing a weird issue where some underline effects in the links are purple instead of white*********** */
+.content-details p {
+	/* color: #effffa; */
+	color: #750ff7;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.app-link {
+	padding: 5px 29.25px;
+}
+
+.code-link {
+	padding: 5px 20px;
+}
+
+.code-icon {
+	color: #750ff7;
+}
+
+.fadeIn-bottom {
+	top: 80%;
+}
+
+@media (max-width: 330px) {
+	.content-details {
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+}
+
+@media (max-width: 330px) {
+	.content-details a {
+		font-size: 14px;
+		margin: 0;
+	}
+	.app-link {
+		padding: 5px 19.25px;
+	}
+
+	.code-link {
+		padding: 5px 10px;
+	}
+}
+
+@media (max-width: 357px) {
+	.proj-title {
+		font-size: 38px;
+	}
+}
+
+@media (max-width: 370px) {
+	.content-details p {
+		font-size: 14px;
+	}
+	.content-details a {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 391px) {
+	.content-text {
+		margin-bottom: 14px;
+	}
+	.content-details {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.content-details a {
+		margin: 0 10px;
+	}
+}
+
+@media screen and (max-width: 825px) {
+	.proj-box {
+		display: block;
+		width: 100%;
+		padding: 3px 0;
+	}
+	.content {
+		max-width: 400px;
+	}
+}
+
+/* 391 is the first pixel it starts at  */
