@@ -40,10 +40,10 @@ const Tools = ({ element }) => {
 					</ul>
 					<ul>
 						<li>Git</li>
-						<li>Jest</li>
 						<li>Redux</li>
-						<li>Webpack</li>
 						<li>Material-UI</li>
+						<li>Jest</li>
+						<li>Webpack</li>
 					</ul>
 				</div>
 			);
@@ -51,7 +51,7 @@ const Tools = ({ element }) => {
 		return (
 			<p className="tools-p">
 				JavaScript React HTML CSS Bootstrap Express Node MySQL MongoDB
-				Rest API Redux Git Webpack Jest Material-UI
+				Rest API Redux Material-UI Git Webpack Jest
 			</p>
 		);
 	};
@@ -61,10 +61,11 @@ const Tools = ({ element }) => {
 			<div ref={element}>
 				<h1>Tools I Use</h1>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Quasi voluptate aut tenetur ea molestias at, pariatur rerum
-					asperiores reprehenderit labore deserunt vel sed optio
-					impedit minus ipsa, dignissimos facilis ut!
+					Here are some of the tools I have been working with recently
+					both as an individual developer and in a team setting. My
+					ever-growing skillset is driven by enthusiastic curiosity as
+					I continue to learn and create with new technologies and
+					languages.
 				</p>
 				{renderToolsList()}
 				<div className="tools-icons">
