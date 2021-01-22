@@ -34,7 +34,7 @@ const projectInfo = [
 		name: "Charity Tracker",
 		css: "charity-title",
 		description:
-			"Manage non-profit organizations to partner with your business. Created using React, Material-UI, Charity Nav API, Node, Express, bcrypt, and MongoDB.",
+			'Manage non-profit organizations to partner with your business. Created with React, Material-UI, Node, Express, bcrypt, and MongoDB. Test using "example" as username and password.',
 		image: process.env.PUBLIC_URL + "/assets/charity-420-278.jpg",
 		appUrl: "https://charity-wowness.herokuapp.com/",
 		repoUrl: "https://github.com/ThomasJasonM1/charity-tracker"
