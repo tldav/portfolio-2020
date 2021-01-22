@@ -5,7 +5,7 @@ import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 const Footer = () => {
 	return (
 		<div className="footer stage">
-			<FontAwesomeIcon icon={faCopyright} /> 2020 Thomas L. Davis
+			<FontAwesomeIcon icon={faCopyright} /> 2021 Thomas L. Davis
 		</div>
 	);
 };
