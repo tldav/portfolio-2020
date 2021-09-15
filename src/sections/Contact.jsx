@@ -43,9 +43,6 @@ const Contact = () => {
 					action="https://formspree.io/xleppyja"
 					method="POST"
 				>
-					{/* <label htmlFor="name" style={{fontSize: "15px"}}>
-						Use the form or email to tldavis09@yahoo.com
-					</label> */}
 					<input
 						className="input-style"
 						type="text"
